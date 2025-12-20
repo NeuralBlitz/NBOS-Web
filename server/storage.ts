@@ -1,38 +1,34 @@
-import { type User, type InsertUser } from "@shared/schema";
-import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import { db } from "./db";
+import {
+  equations,
+  type InsertEquation,
+  type Equation
+} from "@shared/schema";
+import { eq, ilike } from "drizzle-orm";
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  getEquations(search?: string): Promise<Equation[]>;
+  getEquation(id: number): Promise<Equation | undefined>;
+  createEquation(equation: InsertEquation): Promise<Equation>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-
-  constructor() {
-    this.users = new Map();
+export class DatabaseStorage implements IStorage {
+  async getEquations(search?: string): Promise<Equation[]> {
+    if (search) {
+      return await db.select().from(equations).where(ilike(equations.title, `%${search}%`));
+    }
+    return await db.select().from(equations);
   }
 
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
+  async getEquation(id: number): Promise<Equation | undefined> {
+    const [equation] = await db.select().from(equations).where(eq(equations.id, id));
+    return equation;
   }
 
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  async createEquation(insertEquation: InsertEquation): Promise<Equation> {
+    const [equation] = await db.insert(equations).values(insertEquation).returning();
+    return equation;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
