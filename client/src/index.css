@@ -42,10 +42,28 @@
       linear-gradient(90deg, transparent 24%, rgba(0, 240, 255, 0.03) 25%, rgba(0, 240, 255, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 240, 255, 0.03) 75%, rgba(0, 240, 255, 0.03) 76%, transparent 77%, transparent);
     background-size: 100% 100%, 50px 50px, 50px 50px;
   }
+
+  @media (max-width: 640px) {
+    body {
+      font-size: 14px;
+    }
+  }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
     @apply tracking-wider uppercase;
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+    h3 {
+      @apply text-lg;
+    }
   }
 
   code, pre {

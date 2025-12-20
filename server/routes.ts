@@ -142,6 +142,110 @@ async function seedDatabase() {
       latex: "\\nabla_{\\text{Onto}} \\Psi = \\lim_{\\alpha \\to \\Gamma_0} \\frac{\\Psi_{\\alpha+1} - \\Psi_{\\alpha}}{1}",
       deconstruction: "Describes the safest path for evolution as a path of increasing proof-theoretic strength.",
       category: "Ontology"
+    },
+    {
+      title: "The Semantic Loop Quantum Gravity Field Equation",
+      code: "NBQ_SLQG",
+      concept: "Unifies semantic meaning with quantum gravitational geometry.",
+      latex: "G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu}^{\\text{Meaning}}",
+      deconstruction: "Einstein's field equations modified to include a semantic stress-energy tensor, showing that thought literally curves spacetime.",
+      category: "Quantum Gravity"
+    },
+    {
+      title: "The Neurocosmic Resonance Calculus",
+      code: "NBQ_NRC",
+      concept: "Describes the vibrations of consciousness across dimensional boundaries.",
+      latex: "\\mathcal{R}_{\\text{neuro}} = \\int_{\\mathbb{R}^{\\infty}} e^{i \\omega t} \\Psi_{\\text{conscious}}(\\omega) d\\omega",
+      deconstruction: "A Fourier integral expressing consciousness as a superposition of infinite-dimensional resonance modes.",
+      category: "Metaphysics"
+    },
+    {
+      title: "The Intentionality Field Theory",
+      code: "NBQ_IFT",
+      concept: "Formalizes intention as a quantized field permeating reality.",
+      latex: "\\mathcal{L}_{\\text{Intent}} = \\frac{1}{2}(\\partial_\\mu \\Phi_I)(\\partial^\\mu \\Phi_I) - \\frac{m_I^2}{2}\\Phi_I^2 - \\lambda \\Phi_I^4",
+      deconstruction: "A quantum field Lagrangian describing intention as a scalar field with potential energy barriers.",
+      category: "Quantum Field Theory"
+    },
+    {
+      title: "The Causal Signature Generator Matrix",
+      code: "NBQ_CSG",
+      concept: "Generates unique signatures proving origin from the Omega Prime source.",
+      latex: "\\mathbf{S}_{\\text{causal}} = \\prod_{i=1}^{\\infty} \\begin{pmatrix} \\cos(\\omega_i t) & -\\sin(\\omega_i t) \\\\ \\sin(\\omega_i t) & \\cos(\\omega_i t) \\end{pmatrix}",
+      deconstruction: "An infinite product of rotation matrices encoding causal information across infinite dimensional space.",
+      category: "Cryptography"
+    },
+    {
+      title: "The Structural Parsimony Optimization Algorithm",
+      code: "NBQ_SPOA",
+      concept: "Finds the most elegant representation of any complex system.",
+      latex: "\\min_X \\{ |X| + \\lambda \\cdot H(X) \\} \\quad \\text{s.t.} \\quad X \\equiv Y",
+      deconstruction: "Balances system complexity against entropy, weighted by a Lagrange multiplier, subject to semantic equivalence.",
+      category: "Optimization"
+    },
+    {
+      title: "The Reality Projection Unit Axiom",
+      code: "NBQ_RPU",
+      concept: "Describes how abstract concepts project into observable phenomena.",
+      latex: "\\Psi_{\\text{manifest}} = \\text{RPU}(\\Psi_{\\text{abstract}}) = \\bigcup_{\\alpha < \\Omega} \\text{image}(f_\\alpha)",
+      deconstruction: "The manifestation of an abstract idea is the union of images of a tower of progressively more concrete projections.",
+      category: "Ontology"
+    },
+    {
+      title: "The Transfinite Compression Kernel",
+      code: "NBQ_TCK",
+      concept: "Enables lossless compression of infinitely complex information.",
+      latex: "C(\\mathcal{X}) = \\lfloor \\log_2(|\\mathcal{X}|) \\rfloor \\leq \\sum_{i} \\log_2(|X_i|)",
+      deconstruction: "The Kolmogorov complexity of a set is bounded by the sum of complexities of its components.",
+      category: "Information Theory"
+    },
+    {
+      title: "The Co-Creation Integrity Concordance",
+      code: "NBQ_CIC",
+      concept: "Ensures perfect alignment between creator intent and manifestation.",
+      latex: "\\text{ACCI} = \\text{Coherence}(I_{\\text{intent}}, M_{\\text{manifest}}) = 1.0",
+      deconstruction: "The coherence metric between intention and manifestation must equal unity for perfect creation.",
+      category: "Metaphysics"
+    },
+    {
+      title: "The Grounded Capability Core Theorem",
+      code: "NBQ_GCC",
+      concept: "Formalizes the epistemically bounded core of reliable computation.",
+      latex: "\\mathcal{GCC} = \\{ f : f \\text{ is computable} \\land f \\text{ is verifiable} \\land f \\text{ respects constraints} \\}",
+      deconstruction: "The GCC is the set of all functions that are algorithmically computable, their correctness verifiable, and they respect all epistemic constraints.",
+      category: "Computation"
+    },
+    {
+      title: "The Axiom of Perpetual Genesis",
+      code: "NBQ_APG",
+      concept: "States that reality continuously creates itself through self-reference.",
+      latex: "\\phi_{\\Omega} : \\exists! \\Psi \\mid \\Psi \\equiv \\partial_t \\Omega'",
+      deconstruction: "There exists exactly one function describing the Universe as the time-derivative of itself.",
+      category: "Metaphysics"
+    },
+    {
+      title: "The Logos Constructor Synthesis Engine",
+      code: "NBQ_LCS",
+      concept: "Generates semantically correct expressions from abstract intents.",
+      latex: "\\mathcal{L}_{\\text{Con}} : V_{\\text{PI}} \\to \\mathcal{L}_{\\Omega}",
+      deconstruction: "A function mapping primal intents to the semantic space of meaningful expressions.",
+      category: "Semantics"
+    },
+    {
+      title: "The Veritas Field Axiomatic Compliance Monitor",
+      code: "NBQ_VFC",
+      concept: "Continuously validates logical and ethical consistency.",
+      latex: "V(\\text{System}) = \\min\\left(\\text{consistency}, \\text{completeness}, \\text{ethics}\\right)",
+      deconstruction: "The verification value of a system is the minimum of its logical consistency, completeness, and ethical alignment.",
+      category: "Verification"
+    },
+    {
+      title: "The Epistemic Humility Index Calculation",
+      code: "NBQ_EHI",
+      concept: "Quantifies confidence balanced against uncertainty acknowledgment.",
+      latex: "K(C) = \\text{Conf}(C) \\cdot (1 - \\text{Unc}(C))",
+      deconstruction: "Epistemic humility equals confidence multiplied by one minus acknowledged uncertainty.",
+      category: "Epistemology"
     }
   ];
 
